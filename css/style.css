@@ -1,0 +1,148 @@
+html {
+    font-size: 13px;
+}
+[type="radio"]:checked + span::after, [type="radio"].with-gap:checked + span::after {
+    background-color: #1e88e5;
+}
+[type="radio"]:checked + span::after, [type="radio"].with-gap:checked + span::before, [type="radio"].with-gap:checked + span::after {
+    border: 2px solid #1e88e5;
+}
+input:not([type]):focus:not([readonly]), input[type="text"]:not(.browser-default):focus:not([readonly]), input[type="password"]:not(.browser-default):focus:not([readonly]), input[type="email"]:not(.browser-default):focus:not([readonly]), input[type="url"]:not(.browser-default):focus:not([readonly]), input[type="time"]:not(.browser-default):focus:not([readonly]), input[type="date"]:not(.browser-default):focus:not([readonly]), input[type="datetime"]:not(.browser-default):focus:not([readonly]), input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), input[type="tel"]:not(.browser-default):focus:not([readonly]), input[type="number"]:not(.browser-default):focus:not([readonly]), input[type="search"]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #1e88e5;
+    -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+input.valid:not([type]), input.valid:not([type]):focus, input.valid[type="text"]:not(.browser-default), input.valid[type="text"]:not(.browser-default):focus, input.valid[type="password"]:not(.browser-default), input.valid[type="password"]:not(.browser-default):focus, input.valid[type="email"]:not(.browser-default), input.valid[type="email"]:not(.browser-default):focus, input.valid[type="url"]:not(.browser-default), input.valid[type="url"]:not(.browser-default):focus, input.valid[type="time"]:not(.browser-default), input.valid[type="time"]:not(.browser-default):focus, input.valid[type="date"]:not(.browser-default), input.valid[type="date"]:not(.browser-default):focus, input.valid[type="datetime"]:not(.browser-default), input.valid[type="datetime"]:not(.browser-default):focus, input.valid[type="datetime-local"]:not(.browser-default), input.valid[type="datetime-local"]:not(.browser-default):focus, input.valid[type="tel"]:not(.browser-default), input.valid[type="tel"]:not(.browser-default):focus, input.valid[type="number"]:not(.browser-default), input.valid[type="number"]:not(.browser-default):focus, input.valid[type="search"]:not(.browser-default), input.valid[type="search"]:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #1e88e5;
+    -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+    box-shadow: 0 1px 0 0 #1e88e5;
+}
+.datepicker-date-display {
+    background-color: #1e88e5;
+}
+.datepicker-day-button:focus {
+    background-color: #1e88e5;
+}
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+    color: #1e88e5;
+}
+.datepicker-table td.is-selected {
+    background-color: #1e88e5;
+    color: #fff;
+}
+input:not([type]):focus.valid ~ label, input[type="text"]:not(.browser-default):focus.valid ~ label, input[type="password"]:not(.browser-default):focus.valid ~ label, input[type="email"]:not(.browser-default):focus.valid ~ label, input[type="url"]:not(.browser-default):focus.valid ~ label, input[type="time"]:not(.browser-default):focus.valid ~ label, input[type="date"]:not(.browser-default):focus.valid ~ label, input[type="datetime"]:not(.browser-default):focus.valid ~ label, input[type="datetime-local"]:not(.browser-default):focus.valid ~ label, input[type="tel"]:not(.browser-default):focus.valid ~ label, input[type="number"]:not(.browser-default):focus.valid ~ label, input[type="search"]:not(.browser-default):focus.valid ~ label, textarea.materialize-textarea:focus.valid ~ label {
+    color: #1e88e5;
+}
+input:not([type]):focus:not([readonly]) + label, input[type="text"]:not(.browser-default):focus:not([readonly]) + label, input[type="password"]:not(.browser-default):focus:not([readonly]) + label, input[type="email"]:not(.browser-default):focus:not([readonly]) + label, input[type="url"]:not(.browser-default):focus:not([readonly]) + label, input[type="time"]:not(.browser-default):focus:not([readonly]) + label, input[type="date"]:not(.browser-default):focus:not([readonly]) + label, input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label, input[type="datetime-local"]:not(.browser-default):focus:not([readonly]) + label, input[type="tel"]:not(.browser-default):focus:not([readonly]) + label, input[type="number"]:not(.browser-default):focus:not([readonly]) + label, input[type="search"]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #1e88e5;
+}
+.datepicker-table td.is-today {
+    color: #1e88e5;
+}
+[type="checkbox"]:checked + span:not(.lever)::before {
+    border-right: 2px solid #1e88e5;
+    border-bottom: 2px solid #1e88e5;
+}
+
+
+.selection {
+    display: flex; 
+    flex-direction: column;
+    font-size: 20px;
+}
+.site-title {
+    font-size: 50px;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+/* modal */
+.modal-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    
+}
+.modal-project {
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background: #fff; 
+    border-radius: 10px;
+    border:2px solid #1e88e5;
+}
+.hide {
+    display: none;
+}
+.modal-show {
+    color: black;
+    margin-top: 20px;
+}
+.logout-btn {
+    color: black;
+    margin-top: 20px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.modal-project-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+/* Form-slider */
+.form-slider {
+    width: 700px;
+    height: 500px;
+    /* background: bisque; */
+    transition: all ease 0.5s;
+}
+.left-50, .right-50 {
+    /* background: rgb(241, 151, 151); */
+    width: 340px;
+    float: left;
+    min-height: 50px;
+}
+.right-50 {
+    /* background: rgb(86, 221, 221); */
+    width: 350px;
+    min-height: 50px;
+    max-height: 550px;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+.back {
+   text-align: center;
+   cursor: pointer;
+   color: #1e88e5;
+}
+.back:hover {
+    color: #0d47a1;
+}
+.sign-up-modal {
+    width: 360px;
+}
+.form-slider-wrapper {
+    overflow: hidden;
+}
+.read-rules {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1e88e5
+}
+.read-rules:hover {
+    color: #0d47a1;
+}

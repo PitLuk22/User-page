@@ -25,11 +25,12 @@ document.querySelector('#signup-submit').addEventListener('click', function(even
     function signup (result) {
         console.log(result);
         if (result == 2) {
-            alert('Заполните поля!');
+            M.toast({html: 'Заполните поля!'});
         } else if (result == 1) {
-            alert('Регистрация прошла успешно!');
+            M.toast({html: 'Регистрация прошла успешно!'});
+            hideModal();
         } else {
-            alert('Что-то пошло не так!');
+            M.toast({html: 'Что-то пошло не так!'});
         }
     }
     
@@ -50,9 +51,9 @@ document.querySelector('#login-submit').addEventListener('click', function(event
 
     function login(result) {
         if (result == 2) {
-            alert('Заполните поля!');
+            M.toast({html: 'Заполните поля!'});
         } else if (result == 0) {
-            alert('Такой пользователь не найден');
+            M.toast({html: 'Такой пользователь не найден'});
         } else {
             console.log(result); // здесь у нас обычная строка, котороую дальше мы преобразуем в объект
             result = JSON.parse(result); //получаем name и email пользователя и преобразуем в JSON строку (объект)

@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, {
+        format: 'yyyy-mm-dd'
+    });
+  });
+
 let userEmail = getCookie('email'); // здесь просто почта 
 console.log(userEmail);
 
@@ -33,6 +40,7 @@ function getUserData(result) {
             item.checked = true;
         }
     }
+    M.updateTextFields();
 }
 
 
@@ -57,5 +65,10 @@ document.querySelector('#signup-submit').addEventListener('click', function (eve
 
     function updateUserData(result) {
         console.log(result);
+        if (result == 1) {
+            M.toast({html: 'Data successfully updated!'});
+        } else {
+            M.toast({html: 'Something went wrong!'});
+        }
     }
 })  
